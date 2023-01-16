@@ -7,7 +7,7 @@
 <title>로그아웃</title>
 </head>
 <body>
-	<% 
+	<%
 		Cookie[] cookies= request.getCookies();  
 	
 		if(cookies !=null){
@@ -20,13 +20,13 @@
 					out.println(cookieValue+"님 안녕하세요. 로그아웃 하셨습니다.");
 					cookies[i].setMaxAge(0); //쿠키의 유효시간을 0으로 설정->로그아웃(쿠키삭제)
 					response.addCookie(cookies[i]);
-				
-				}else {
+				}
+			}
+			}else {
 					response.sendRedirect("Login.jsp");
-					}
 				}
 			
-				response.sendRedirect("cookieTest.jsp");
+			response.sendRedirect("cookieTest.jsp");
 		
 		//int a=200;
 		//int b=0;

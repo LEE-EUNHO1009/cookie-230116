@@ -26,10 +26,7 @@
 			//if(cookieValue.equals("tiger")){
 			//	out.println(cookieValue+"님 안녕하세요. 로그인 하셨습니다.");
 			//}
-			
-			
 		}
-		
 		
 	%>
 	  <a href="Logout.jsp">로그아웃</a>
